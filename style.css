@@ -102,7 +102,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: compliste;
+  counter-reset: compteliste;
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement_items {
@@ -112,6 +112,41 @@ body {
 .fonctionnement_item {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement_item {
+    flex: 1;
+    margin-left: 2rem;
+  }
+  .fonctionnement_item:first-child {
+    margin-left: 0.75rem;
+  }
+}
+.fonctionnement_item::before {
+  counter-increment: compteliste;
+  content: counter(compteliste) "";
+  background-color: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -0.75rem;
+}
+.fonctionnement_icone {
+  margin-right: 1rem;
+  color: #e7e7e7;
+}
+.fonctionnement_icone:hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

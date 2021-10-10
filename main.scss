@@ -119,7 +119,7 @@ body{
         margin: 0;
         padding: 0;
         list-style: none;
-        counter-reset: compliste;
+        counter-reset: compteliste;
         @media screen and (min-width: 1024px) {
             display: flex;
         }
@@ -128,5 +128,43 @@ body{
     &_item{
         padding: 1.5rem;
         margin: 1rem 0 1rem 0.75rem;
+        box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 1.25rem;
+        background-color: #f6f6f6;
+        display: flex;
+        position: relative;
+
+        @media  screen and (min-width: 1024px) {
+            flex: 1;
+            margin-left: 2rem; 
+            
+            &:first-child{
+                margin-left: 0.75rem;
+            }
+        } 
+        &::before{
+            counter-increment: compteliste;
+            content: counter(compteliste)"";
+            background-color: $color-primary;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            left: -.75rem;
+        }
+
     }
+    &_icone{
+        margin-right: 1rem;
+        color: #e7e7e7;
+        &:hover{
+           color: $color-primary; 
+        }
+    }
+
+
 }
