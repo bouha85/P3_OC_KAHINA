@@ -1,0 +1,132 @@
+$color-primary: #9356DC;
+$color-secondary: #ff79DA;
+$color-tertiary: #99E2D0;
+
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    padding: 1rem 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1000;
+  
+    &__logo {
+      font-family: "Shrikhand", "cursive";
+      margin: 0;
+      text-align: center;
+    }
+}
+$color-primary: #9356DC;
+$color-secondary: #ff79DA;
+$color-tertiary: #99E2D0;
+
+@mixin button ($type) {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    background-color: $color-primary;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    &:hover{
+        background-color: violet;
+        box-shadow: .25rem .25rem 10px rgb(0, 0, 0, 0.5); 
+        color: $color-primary;  
+    }
+    
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1280px;
+    position: relative;
+    margin: auto;
+}
+.header{
+    position: relative;
+    padding: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    &_logo{
+        font-family: 'Shrikhand', cursive;
+        margin: 0;
+        text-align: center;
+    }
+    
+}
+.local{
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+    background-color: rgb(243, 243, 243);
+    font-size: 1.25rem;
+
+    &_icone{
+        margin-right: 1rem;
+    }
+    &_text{
+        font-weight: 700;
+    }
+}
+
+.hero{
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+
+    &_title{
+        margin: 0;
+    }
+    &_subtitle{
+        font-weight: 300;
+        margin: 1.5rem 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    &_btn{
+        @include button(primary)
+        
+    }
+}
+
+.fonctionnement{
+    padding: 2rem 1rem;
+    
+    &_title{
+        margin-top: 0;
+    }
+
+    &_items{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: compliste;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+        }
+    }
+
+    &_item{
+        padding: 1.5rem;
+        margin: 1rem 0 1rem 0.75rem;
+    }
+}
