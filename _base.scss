@@ -1,1 +1,90 @@
-//***************variables*************
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+$color-primary: #9356DC;
+$color-secondary: #ff79DA;
+$color-tertiary: #99E2D0;
+
+@mixin button ($type) {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    background-color: $color-primary;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    
+    &:hover{
+        background-color: violet;
+        box-shadow: .25rem .25rem 10px rgb(0, 0, 0, 0.5); 
+        color: $color-primary;  
+    }  
+}
+
+.container{
+    max-width: 1280px;
+    position: relative;
+    margin: auto;
+}
+
+
+.header{
+    position: relative;
+    padding: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    
+    &_logo{
+        font-family: 'Shrikhand', cursive;
+        margin: 0;
+        text-align: center;
+    }  
+}
+
+.footer{
+    background-color: rgb(19, 17, 17);
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    &_logo{
+        color: white;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.2rem;
+        margin: 0 0 1rem 0;
+    }
+    &_listes{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    &_liste{
+        margin: 0.5rem 0;
+        &:firste-child{
+            margin-top: 0;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+    }
+    &_link{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &_icone{
+        width: 1.2rem;
+        margin-right: 0.5rem;
+    }
+}
