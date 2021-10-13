@@ -7,6 +7,16 @@ ul {
   padding-inline-start: 0;
 }
 
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .container {
   max-width: 1280px;
   position: relative;
@@ -95,12 +105,6 @@ ul {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
-  /*&_like--bg{
-      position: absolute;
-      right: 2rem;
-      top: 2.75rem;
-      color: transparent;  
-  }*/
 }
 .menu_header {
   padding: 1rem 2rem 0 1rem;
@@ -109,10 +113,16 @@ ul {
   align-items: center;
   position: relative;
 }
+.menu_like--bg {
+  position: absolute;
+  right: 2rem;
+  top: 2.75rem;
+  color: transparent;
+}
 .menu_title {
   font-family: "Shrikhand", cursive;
 }
-.menu__btn {
+.menu_btn {
   height: 2rem;
   width: 2rem;
   background-color: transparent;
@@ -141,7 +151,6 @@ ul {
   padding: 0 1rem;
 }
 .submenu_title {
-  text-transform: uppercase;
   position: relative;
   padding-bottom: 0.5rem;
   font-weight: normal;
@@ -178,7 +187,7 @@ ul {
   overflow: hidden;
   flex: 1;
 }
-.menuItem__title {
+.menuItem_title {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -187,13 +196,14 @@ ul {
 .menuItem_description {
   margin: 0;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menuItem_price {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   padding-left: 0.5rem;
 }
 .menuItem_confirmation {
@@ -222,7 +232,7 @@ ul {
 .menuItem:hover .menuItem__wrapIcon {
   transform: rotate(0);
 }
-.menuItem__icone {
+.menuItem_icone {
   color: #99E2D0;
 }
 
@@ -247,13 +257,9 @@ ul {
   background: #9356dc;
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 90%);
   cursor: pointer;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  position: relative;
-  justify-content: center;
 }
 .commandBtn:hover {
-  background-color: #df7cdf;
+  background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -301,7 +307,7 @@ ul {
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 90%);
 }
 .hero_btn:hover {
-  background-color: #df7cdf;
+  background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -327,7 +333,7 @@ ul {
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   border-radius: 1.25rem;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
   display: flex;
   position: relative;
 }
