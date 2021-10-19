@@ -1,0 +1,12 @@
+.header{
+    position: relative;
+    padding: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    
+    &_logo{
+        font-family: 'Shrikhand', cursive;
+        margin: 0;
+        text-align: center;
+    }  
+}

@@ -1,0 +1,44 @@
+
+.footer{
+    background-color: rgb(19, 17, 17);
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        
+    }
+
+    &_logo{
+        color: white;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.2rem;
+        margin: 0 0 1rem 0;
+    }
+    &_listes{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    &_liste{
+        margin: 0.5rem 0;
+        &:firste-child{
+            margin-top: 0;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+    }
+    &_link{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &_icone{
+        width: 1.2rem;
+        margin-right: 0.5rem;
+    }
+}
