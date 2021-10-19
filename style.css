@@ -47,7 +47,7 @@
 .footer_liste {
   margin: 0.5rem 0;
 }
-.footer_liste:firste-child {
+.footer_liste:first-child {
   margin-top: 0;
 }
 .footer_liste:last-child {
@@ -135,7 +135,7 @@
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   border-radius: 1.25rem;
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   display: flex;
   position: relative;
 }
@@ -161,6 +161,9 @@
   color: white;
   position: absolute;
   left: -0.75rem;
+}
+.fonctionnement_item:hover {
+  background-color: #f2dff4;
 }
 .fonctionnement_icone {
   margin-right: 1rem;
@@ -201,7 +204,7 @@
 .card_img {
   height: 12rem;
   width: 100%;
-  border: 0px solid transparent;
+  border: 0.1px solid transparent;
   border-radius: 1rem;
   object-fit: cover;
 }
@@ -253,6 +256,10 @@ body {
 figure {
   padding: 0;
   margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 .header--withArrow {
