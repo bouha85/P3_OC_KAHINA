@@ -139,11 +139,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition-duration: 0.5s;
-    }
-    &:hover &__confirmation {
-        margin-right: -1rem;
+        transition-duration: .5s;
+        &:hover{
+            margin-right: -1rem;
       }
+        }
+    
+     
     &_wrapIcone{
         height: 1.6rem;
         width: 1.6rem;
@@ -154,11 +156,12 @@
         border-radius: 100px;
         transform: rotate(180deg);
         transition-duration: 0.5s;
+        
+        &:hover{
+            transform: rotate(0);
+        }
     }
-    &:hover &__wrapIcon {
-        transform: rotate(0);
-      }
-    
+     
     &_icone {
         color: $color-tertiary;
       }

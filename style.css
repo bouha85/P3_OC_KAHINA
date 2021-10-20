@@ -402,7 +402,7 @@ ul {
   justify-content: center;
   transition-duration: 0.5s;
 }
-.menuItem:hover .menuItem__confirmation {
+.menuItem_confirmation:hover {
   margin-right: -1rem;
 }
 .menuItem_wrapIcone {
@@ -416,7 +416,7 @@ ul {
   transform: rotate(180deg);
   transition-duration: 0.5s;
 }
-.menuItem:hover .menuItem__wrapIcon {
+.menuItem_wrapIcone:hover {
   transform: rotate(0);
 }
 .menuItem_icone {
