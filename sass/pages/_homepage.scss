@@ -202,15 +202,14 @@
         height: 2rem;
         width: 2rem;
         background-color: transparent;
-        border: 0px solide transparent;
+        border: transparent 0px solid;
         padding: 0;
         display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center;    
     }
-    &_like{
+    &_like {
         background-color: white!important;
-    }
-
+      }
 }
 
