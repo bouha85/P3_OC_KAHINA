@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &_item{
         height: 1rem;
         width: 1rem;
@@ -132,7 +133,6 @@
             left: -.75rem;
         }
         
-
     }
     &_icone{
         margin-right: 1rem;
