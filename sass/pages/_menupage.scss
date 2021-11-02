@@ -2,7 +2,7 @@
     &--withArrow{
         position: relative;
     }
-    &_arrow{
+    &__arrow{
         position: absolute;
         left: 2rem;
         height: 2rem;
@@ -30,7 +30,7 @@
     z-index: 1;
     position: relative;
     
-    &_header{
+    &__header{
         padding: 1rem 2rem 0 1rem;
         display: flex;
         justify-content: space-between;
@@ -38,12 +38,12 @@
         position: relative;
     }
    
-    &_title{
+    &__title{
         font-family: 'Shrikhand', cursive;
         z-index: 10;
     }
 
-    &_btn {
+    &__btn {
         height: 2rem;
         width: 2rem;
         background-color: transparent;
@@ -73,7 +73,7 @@
     }
     
     
-    &_like{
+    &__like{
         background-color: #f6f6f6;
         position: absolute;
         top: 0;
@@ -85,8 +85,8 @@
         mix-blend-mode: lighten;
         transition-duration: .25s;
      }
-     &_btn:hover{
-         .menu_like{
+     &__btn:hover{
+         .menu__like{
              &--nobg{
                  opacity: 0;
              }
@@ -105,7 +105,7 @@
     max-width: 100%;
     overflow: hidden;
     padding: 0 1rem;
-    &_title{
+    &__title{
         position: relative;
         padding-bottom: 0.5rem;
         font-weight: normal;
@@ -137,7 +137,7 @@
     transform: scale(0);
     max-width: 100%;
     
-    &_infos{
+    &__infos{
         padding: 1rem; 
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -145,7 +145,7 @@
         flex:1,
     }
 
-    &_title {
+    &__title {
         margin: 0;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -153,14 +153,14 @@
         padding-bottom: 4px;
       }
 
-    &_description{
+    &__description{
         margin: 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         
     }
-    &_price{
+    &__price{
         font-weight: bold;
         display: flex;
         justify-content: flex-end;
@@ -168,7 +168,7 @@
         padding: 0 16px 16px 0.5rem;
         
     }
-    &_confirmation{
+    &__confirmation{
         background-color: $color-tertiary;
         margin: -1rem -5rem -1rem 1rem;
         width: 4rem;
@@ -181,7 +181,7 @@
       }
         }
     
-    &_wrapIcone{
+    &__wrapIcone{
         height: 1.6rem;
         width: 1.6rem;
         background-color: white;
@@ -191,7 +191,7 @@
         border-radius: 100px;
     }
      
-    &_icone {
+    &__icone {
         color: $color-tertiary;
         transform: rotate(180deg);
         transition-duration: 0.4s;
@@ -199,9 +199,9 @@
 }
 
 .menuItem:hover {
-    .menuItem_confirmation {
+    .menuItem__confirmation {
         margin: 0;
-        .menuItem_icone {
+        .menuItem__icone {
             transform: rotate(0deg);
         }
     }
