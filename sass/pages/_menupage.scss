@@ -54,7 +54,7 @@
         justify-content:center;
         cursor: pointer;
         position: relative;
-        background-color: black;
+        background-color: rgb(216, 214, 214);
 
         &:hover::before{
             opacity: 1;
@@ -207,34 +207,34 @@
     }
 }
 .dely-0{
-    animation-delay: 0s;
+    animation-delay: 0.9s;
 }
 .dely-1{
-    animation-delay: 0.1s;
-}
-.dely-2{
-    animation-delay: 0.2s;
-}
-.dely-3{
-    animation-delay: 0.3s;
-}
-.dely-4{
-    animation-delay: 0.4s;
-}
-.dely-5{
-    animation-delay: 0.5s;
-}
-.dely-6{
-    animation-delay: 0.6s;
-}
-.dely-7{
-    animation-delay: 0.7s;
-}
-.dely-8{
     animation-delay: 0.8s;
 }
+.dely-2{
+    animation-delay: 0.7s;
+}
+.dely-3{
+    animation-delay: 0.6s;
+}
+.dely-4{
+    animation-delay: 0.5s;
+}
+.dely-5{
+    animation-delay: 0.4s;
+}
+.dely-6{
+    animation-delay: 0.3s;
+}
+.dely-7{
+    animation-delay: 0.2s;
+}
+.dely-8{
+    animation-delay: 0.1s;
+}
 .dely-9{
-    animation-delay: 0.9s;
+    animation-delay: 0s;
 }
   
   .wrapBtn {
